@@ -37,7 +37,7 @@ messages = [
 ]
 template = ChatPromptTemplate.from_messages( messages )
 
-uploaded_file = st.sidebar.file_uploader("upload", type="csv")
+uploaded_file = st.sidebar.file_uploader("Chatbot", type="csv")
 
 if uploaded_file:
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
